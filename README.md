@@ -152,7 +152,7 @@ API keys are stored in the user's keyring:
 
 - **macOS**: Keychain
 - **Windows**: Credential Manager
-- **Linux**: Secret Service (gnome-keyring, KWallet, etc.)
+- **Linux**: Secret Service (gnome-keyring)
 
 Keys are not pre-filled to the UI during configuration, and are masked by default on status output.
 
