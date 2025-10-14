@@ -158,7 +158,7 @@ brews:
       # Repository name.
       #
       # Templates: allowed.
-      name: tap
+      name: homebrew-tap
 
       token: "{{ .Env.HOMEBREW_TOKEN }}"
 
@@ -296,14 +296,6 @@ scoops:
     #   Gitea: 'https://gitea.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}'
     # Templates: allowed.
     url_template: "https://github.com/connorgannaway/how/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
-
-    # Directory inside the repository to put the scoop.
-    #
-    # Note that while scoop works if the manifests are in a directory,
-    # 'scoop bucket list' will show 0 manifests if they are not in the root
-    # directory.
-    # In short, it's generally better to leave this empty.
-    directory: Scoops
 
     # The project name and current git tag are used in the format string.
     #
