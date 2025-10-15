@@ -160,7 +160,7 @@ brews:
       # Templates: allowed.
       name: homebrew-tap
 
-      token: "{{ .Env.HOMEBREW_TOKEN }}"
+      token: "{{ .Env.REPO_PUBLISH_TOKEN }}"
 
 winget:
   - # Name of the recipe
@@ -264,7 +264,7 @@ winget:
       # provided to GoReleaser
       #
       # Templates: allowed.
-      token: "{{ .Env.WINGET_TOKEN }}"
+      token: "{{ .Env.REPO_PUBLISH_TOKEN }}"
 
     # Git author used to commit to the repository.
     #
@@ -341,7 +341,7 @@ scoops:
       # provided to GoReleaser
       #
       # Templates: allowed.
-      token: "{{ .Env.SCOOP_TOKEN }}"
+      token: "{{ .Env.REPO_PUBLISH_TOKEN }}"
 
     # Git author used to commit to the repository.
     #

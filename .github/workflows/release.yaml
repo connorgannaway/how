@@ -36,6 +36,4 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HOMEBREW_TOKEN: ${{ secrets.HOMEBREW_TOKEN }}
-          WINGET_TOKEN: ${{ secrets.WINGET_TOKEN }}
-          SCOOP_TOKEN: ${{ secrets.SCOOP_TOKEN }}
+          REPO_PUBLISH_TOKEN: ${{ secrets.REPO_PUBLISH_TOKEN }}
