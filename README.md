@@ -19,7 +19,7 @@ winget source add -n connorgannaway https://github.com/connorgannaway/winget-pkg
 winget install connorgannaway.how
 
 # scoop
-scoop bucket add connorgannaway https://github.com/connorgannaway/scoop
+scoop bucket add connorgannaway https://github.com/connorgannaway/scoops
 scoop install how
 ```
 
