@@ -43,6 +43,8 @@ how do I find all files modified in the last 7 days
 
 ### Cloud Providers
 
+Preconfigured cloud providers and models include
+
 - **OpenAI** - GPT-5, GPT-4.1, GPT-4o, GPT-4, O-series models
 - **Anthropic** - Claude Opus 4, Claude Sonnet 4.5, Claude 3.7/3.5
 - **Google** - Gemini 2.5 Pro/Flash, Gemini 2.0 Flash
@@ -131,7 +133,7 @@ how -h
 
 ### Configuration File
 
-Config file location defaults to XDG_CONFIG_HOME, otherwise:
+Config file location defaults to XDG_CONFIG_HOME if set, otherwise:
 
 - **macOS/Linux**: `~/.config/how/config.json`
 - **Windows**: `%APPDATA%\how\config.json`
@@ -148,13 +150,11 @@ Example config:
 
 ### API Key Storage
 
-API keys are stored in the user's keyring:
+API keys are stored in the user keyring:
 
 - **macOS**: Keychain
 - **Windows**: Credential Manager
 - **Linux**: Secret Service (gnome-keyring)
-
-Keys are not pre-filled to the UI during configuration, and are masked by default on status output.
 
 ## License
 
